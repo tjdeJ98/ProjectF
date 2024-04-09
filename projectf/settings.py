@@ -35,6 +35,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django_htmx',
+    'tailwind',
+    'theme',
+    'django_browser_reload',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,6 +51,8 @@ INSTALLED_APPS = [
     'galleries'
 ]
 
+TAILWIND_APP_NAME = 'theme'
+
 MIDDLEWARE = [
     'django_htmx.middleware.HtmxMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -57,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'projectf.urls'
@@ -76,6 +82,12 @@ TEMPLATES = [
         },
     },
 ]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd" 
 
 WSGI_APPLICATION = 'projectf.wsgi.application'
 
@@ -130,9 +142,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static'
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    BASE_DIR / "static_src/src"
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
