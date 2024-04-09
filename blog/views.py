@@ -5,4 +5,4 @@ from django.http import HttpResponse
 def blog_view(request):
     return render(request, "blog.html")
 
-# Create your views here.
+
