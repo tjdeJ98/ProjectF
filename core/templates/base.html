@@ -3,11 +3,21 @@
   <head>
     {% load static %}
     <script src="{% static 'htmx/htmx.min.js' %}" defer></script>
+
   </head>
   <body>
-    <header>This is the block</header>
+    <header>This is the base</header>
 
-    <main>{% block content %}{% endblock %}</main>
+    <main>
+      <div>
+        <nav hx-boost="true">
+          <a href="/blog">Blog</a>
+        </nav>
+      </div>
+      <div id='content'> 
+        {% block content %}{% endblock %}
+      </div>
+    </main>
 
     <footer></footer>
   </body>
