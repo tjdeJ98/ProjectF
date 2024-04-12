@@ -4,4 +4,6 @@ from django.shortcuts import render
 
 
 def contact(request):
+    if request.htmx:
+        return render(request, "contact_partial.html")
     return render(request, "contact.html")

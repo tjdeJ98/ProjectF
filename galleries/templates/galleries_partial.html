@@ -1,0 +1,6 @@
+<div class="h-flex columns-2 gap-3 sm:columns-2 sm:gap-2 md:columns-2 lg:columns-3 [&>img:not(:first-child)]:mt-3">
+    {% for image in images %}
+            {% load static %}
+            <img class="h-auto" src="{% static 'media/gallerie/' %}{{ image }}">
+    {% endfor %}
+</div>
