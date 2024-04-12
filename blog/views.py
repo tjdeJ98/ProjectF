@@ -1,8 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from blog.models import BlogPost
 
 
 def blog_view(request):
-    return render(request, "blog.html")
+    blogposts = BlogPost.objects.all()
+
+    if request.htmx:
+        return render(request, "blog_partial.html", {"blogpost": blogposts})
+    return render(request, "blog.html", {"blogpost": blogposts})
 
 

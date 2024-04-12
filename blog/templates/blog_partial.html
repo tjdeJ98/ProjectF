@@ -1,0 +1,11 @@
+<div class="bg-transparent pb-8 items-start">
+    <h1>{{ blogpost.title }}</h1>
+    <p>By {{ blogpost.author }}</p>
+    {{ blogpost.content|safe }} {% if blogpost.images.all %}
+        <div class="post-images">
+            {% for image in blogpost.images.all %}
+                <img src="{{ image.image.url }}" alt="{{ image.title }}">
+            {% endfor %}
+        </div>
+    {% endif %}
+  </div>

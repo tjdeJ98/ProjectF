@@ -1,0 +1,14 @@
+<div class="h-flex columns-2 gap-3 sm:columns-2 sm:gap-2 md:columns-2 lg:columns-3 [&>img:not(:first-child)]:mt-3">
+    {% for image in images %}
+    {% load static %}
+        <a href="{% static image.image %}" class="glightbox" data-glightbox="" data-gallery="mygallery"> 
+            <img class="h-auto hover:scale-[102%] hover:border-2 mb-3 hover:border-gray-100" src="{% static image.image %}">
+        </a>
+    {% endfor %}
+</div>
+
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox' 
+    });
+</script>
