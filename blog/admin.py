@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import BlogPost
 
-# Register your models here.
+class BlogPostAdmin(admin.ModelAdmin):
+    filter_horizontal = ('images',)  # Provides a nice interface for multiple images
+
+admin.site.register(BlogPost, BlogPostAdmin)

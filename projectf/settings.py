@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django_htmx',
     'tailwind',
     'theme',
+    'ckeditor',
+    'login',
     'django_browser_reload',
     'django.contrib.admin',
     'django.contrib.auth',
