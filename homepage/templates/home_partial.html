@@ -1,81 +1,59 @@
-<div class="container flex">
-    <div class="column-3 m-4">
+<section class="hidden md:block">
+    <div class="flex justify-center h-fit w-full">
         {% load static %}
-        <img class="rounded w-36 aspect-square object-cover" src='{% static 'media\gallerie\1ee0045e-b474-42cb-ad7e-d3f922659cb5.jpeg' %}' alt="Extra large avatar">
+        <img class="max-h-screen" src="{% static 'media/homepage/Homepage.png' %}"/>
     </div>
-    <div class="column-9">
-        <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
-            <li class="mb-10 ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg></a>
-            </li>
-            <li class="mb-10 ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-            </li>
-            <li class="ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-            </li>
-        </ol>
+</section>
+<div class="relative overflow-hidden bg-center bg-cover bg-no-repeat" style="background-image: url('https://images.squarespace-cdn.com/content/v1/59551049ccf21033ff89a906/1677526264463-V05GCWWL7LWXCJVKQ3Z5/Light+Gray+with+Mist.png?format=2500w')">
+<section class="container mx-auto min-h-full">
+    <div class="flex flex-wrap justify-center mt-10 space-x-0 xl:space-x-32 ">
+        <div class="p-4 max-w-lg">
+            <div class="flex flex-col items-center justify-center h-full p-0 md:p-8 flex-col font-Volkhov">
+                <div class="w-96 h-flex flex justify-center">
+                    <img class="max-h-96 lg:max-h-lvh md:max-h-svh hover:scale-[102%] hover:border-2 xl:mb-3 mb-3 hover:border-gray-100" src="{% static 'media/homepage/fede1.jpg' %}" alt=""/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-4 max-w-lg">
+            <div class="flex flex-col items-center text-center justify-center h-full p-0 md:p-8 font-Volkhov">
+                <h2 class="font-medium text-md font-Volkhov mb-8">HI, I'M FEDERICA!</h2>
+                <h1 class="font-thin text-3xl mb-8">Copywriter. Verbal Strategist. Audience Whisperer.</h1>
+                <h1>From SEO-friendly websites and blog posts to quick-witted captions and taglines, I’ve crafted copy for numerous brands, agencies, and businesses across the country. Now, I’d be thrilled to help tell your story.​​​​​​​</h1>
+            </div>
+        </div>
+    
     </div>
+</section> 
 </div>
+<div class="relative overflow-hidden bg-center bg-cover bg-no-repeat" style="background-image: url('https://images.squarespace-cdn.com/content/v1/59551049ccf21033ff89a906/1532706156010-R68VECRDMTAHVJWYOLS4/shanleycox-home-diamondbg-01.png?format=2500w')">
+    <section class="flex justify-center text-center mt-20">
+        <h1 class="text-4xl font-thin">What I do </h1>
+    </section>
+    <section>
+        <div class="flex flex-wrap justify-center space-x-0 lg:space-x-16">
 
-
-<div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="duration-700 ease-in-out" data-carousel-item>
-            {% load static %}
-            <img src="{% static 'media\gallerie\77732c5e-8071-4757-88e5-abefbda25770.jpeg' %}" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <div class="p-4 max-w-lg">
+                <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8 flex-col font-Volkhov">
+                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="{% static 'media/plant.png' %}" alt=""/>
+                    <h1> bla bla bla bla bla bla</h1>
+                    <p class="leading-relaxed text-base text-black font-Volkhov">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="p-4 max-w-lg">
+                <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8 flex-col font-Volkhov">
+                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="{% static 'media/plant.png' %}" alt=""/>
+                    <h1> bla bla bla bla bla bla</h1>
+                    <p class="leading-relaxed text-base text-black font-Volkhov">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                </div>
+            </div>
+        
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            {% load static %}
-            <img src="{% static 'media\gallerie\77732c5e-8071-4757-88e5-abefbda25770.jpeg' %}" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            {% load static %}
-            <img src="{% static 'media\gallerie\77732c5e-8071-4757-88e5-abefbda25770.jpeg' %}" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            {% load static %}
-            <img src="{% static 'media\gallerie\77732c5e-8071-4757-88e5-abefbda25770.jpeg' %}" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            {% load static %}
-            <img src="{% static 'media\gallerie\77732c5e-8071-4757-88e5-abefbda25770.jpeg' %}" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-        </div>
-    </div>
-    <div class="flex justify-center items-center pt-4">
-        <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-    </div>
+    </section>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

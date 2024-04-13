@@ -1,6 +1,7 @@
-body {
-    margin: 0px;
+
+#tiny-navbar {
+    transition: opacity 0.3s ease-out, height 0.3s ease-out;
 }
-#content {
-    min-height: calc(100vh - 40px);
-}
+/* .hidden {
+    display: none;
+} */
