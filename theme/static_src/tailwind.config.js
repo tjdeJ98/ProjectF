@@ -54,4 +54,9 @@ module.exports = {
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
     ],
+    safelist: [
+        'animate-[fade-in_1s_ease-in-out]', 
+        'animate-[fade-in-down_1s_ease-in-out]',
+        'animate-[fade-in-left_1s_ease-in-out]',
+    ],
 }

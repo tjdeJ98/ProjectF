@@ -1,30 +1,33 @@
 {% comment %} hidden md:block {% endcomment %}
 <nav id="main-navbar" class="w-full sticky" id="navbar-sticky" >
-	<div class="w-full h-auto md:h-32 flex items-center justify-between mx-auto p-4 hx-boost="true" hx-trigger="revealed" hx-target="#main-navbar"">
-		<button data-collapse-toggle="navbar-sticky" class="text-sm text-gray-500 rounded-lg md:hidden" aria-controls="navbar-sticky" aria-expanded="false">
-			<span class="sr-only">Open main menu</span>
-			<svg class="w-5 h-5" aria-hidden="true" xmlns="" fill="none" viewBox="0 0 17 14">
-				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-			</svg>
-		</button>
+	<button data-collapse-toggle="navbar-sticky" class="absolute text-sm text-gray-500 rounded-lg md:hidden" style="margin-top: 1rem; margin-left: 1rem;" aria-controls="navbar-sticky" aria-expanded="false">
+		<span class="sr-only">Open main menu</span>
+		<svg class="w-8 h-5" aria-hidden="true" xmlns="" fill="none" viewBox="0 0 17 14">
+			<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+		</svg>
+	</button>
+	<div class="w-full h-32 md:h-32 flex items-center justify-center md:justify-between mx-auto p-4 hx-boost="true" hx-trigger="revealed" hx-target="#main-navbar"">
+		
 		<div class="hidden md:block text-lg">
 			<ul class="ml-10 flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
 				<li>
-					<a href="/galleries" hx-push-url="/gallery" hx-get="/galleries/" 
+					<a href="/galleries" hx-push-url="/gallery/" hx-get="/galleries/" 
 					hx-target="#content-area" 
-					hx-trigger="click" class=" block py-2 px-3 md:p-0">Gallery</a>
+					hx-trigger="click" class="font-thin text-2xl block py-2 px-3 md:p-0">Gallery</a>
 				</li>
 				<li>
 					<a href="/blog" hx-push-url="/blog" hx-get="/blog/" 
 					hx-target="#content-area" 
-					hx-trigger="click" class="block py-2 px-3 md:p-0">Blog</a>
+					hx-trigger="click" class="font-thin text-2xl block py-2 px-3 md:p-0">Blog</a>
 				</li>
 				<li>
 			</ul>
 		</div>
-		<div class=""> 
-			<a href="/" class="">
-				<span class="text-2xl md:text-4xl font-Volkhov font-semibold font-bg whitespace-nowrap text-[#C0B58F]">Federica Moro</span>
+		<div class="max-w-96"> 
+			<a href="/" class="object-fill">
+				{% load static %}
+				<img class="h-auto w-auto object-fill" src="{% static "media/homepage/Top logo.png" %}"/>
+	
 			</a>
 		</div>
 		<div class="hidden md:block">
@@ -32,22 +35,21 @@
 				<li>
 					<a href="/about" hx-push-url="/about" hx-get="/about/" 
 					hx-target="#content-area" 
-					hx-trigger="click" class="block py-2 px-3 md:p-0">About</a>
+					hx-trigger="click" class="font-thin text-2xl block py-2 px-3 md:p-0">About</a>
 				</li>
 				<li>
 					<a href="/contact" hx-push-url="/contact" hx-get="/contact/" 
 					hx-target="#content-area" 
-					hx-trigger="click" class="block py-2 px-3 md:p-0">Contact</a>
+					hx-trigger="click" class="font-thin text-2xl block py-2 px-3 md:p-0">Contact</a>
 				</li>
-				<li>
+				{% comment %} <li>
 					<a href="https://www.instagram.com/your_instagram_profile/" target="_blank">
 						<i class="instaicon fab fa-instagram"></i> 
 						<span class="sr-only">Instagram</span> 
 					</a>
-				</li>
+				</li> {% endcomment %}
 			</ul>
 		</div>
-		<div class="w-5 h-5 md:hidden"></div>
 	</div>
 </nav>
 
