@@ -1,0 +1,12 @@
+<section class="container mx-auto min-h-full mt-10">
+    <div class="h-flex columns-2 gap-6 sm:columns-2 sm:gap-5 md:columns-2 lg:columns-3 [&>img:not(:first-child)]:m-8">
+        {% for image in images %}
+            {% for image in images %}
+                {% load static %}
+                <a href="{% static image.image %}" class="glightbox h-auto xl:mb-3 mb-3" data-glightbox="" data-gallery="mygallery"> 
+                    <img class="fade-in-r-element opacity-0 h-auto hover:scale-[102%] hover:border-2 xl:mb-7 mb-5 hover:border-gray-100" src="{% static image.image %}">
+                </a>
+                {% endfor %}
+        {% endfor %}
+    </div>
+</section>

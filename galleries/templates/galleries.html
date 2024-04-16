@@ -1,4 +1,8 @@
 {% extends 'base.html' %} 
 {% block content %}
-{% include 'galleries_partial.html'%}
+{% if page == "plants_gal.html" %}
+    {% include "plants_gal.html" %}
+{% elif page == "other_gal.html" %}
+    {% include "other_gal.html" %}
+{% endif %}
 {% endblock %}

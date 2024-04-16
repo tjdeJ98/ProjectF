@@ -11,5 +11,14 @@ def galleries(request):
     # TODO: get image paths from the db
 
     if request.htmx:
-        return render(request, "galleries_partial.html", {"images": images})
-    return render(request, "galleries.html", {"images": images})
+        return render(request, "galleries_partial.html")
+    return render(request, "galleries.html", {"page": "galleries_partial.html"} )
+
+
+def plants(request):
+    images = Image.objects.all()
+
+    if request.htmx:
+        return render(request, "plants_gal.html", {"images": images})
+    # TODO still need to send the images
+    return render(request, "galleries.html", {"page": "plants_gal.html"})

@@ -1,17 +1,21 @@
-<section class="container mx-auto min-h-full mt-10">
-    <div class="h-flex columns-2 gap-3 sm:columns-2 sm:gap-2 md:columns-2 lg:columns-3 [&>img:not(:first-child)]:mt-3">
-        {% for image in images %}
-            {% for image in images %}
-                {% load static %}
-                <a href="{% static image.image %}" class="glightbox h-auto xl:mb-3 mb-3" data-glightbox="" data-gallery="mygallery"> 
-                    <img class="fade-in-r-element h-auto hover:scale-[102%] hover:border-2 xl:mb-3 mb-3 hover:border-gray-100" src="{% static image.image %}">
-                </a>
-                {% endfor %}
-        {% endfor %}
+{% comment %} TODO FIX GOING HERE WITHOUT HTMX {% endcomment %}
+<section class="flex justify-center h-[calc(100vh-14rem)]">
+    <div class="flex justify-center items-center font-thin text-5xl my-4 tracking-tight">
+        <a href="/gallery/plants" hx-push-url="/gallery/plants" hx-get="/gallery/plants/" 
+        hx-target="#content-area" 
+        hx-trigger="click"><h2 class="hover:text-6xl">PLANTS</h2></a>
+        <h2> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; </h2>
+        <a href="/gallery/plants" hx-push-url="/gallery/plants" hx-get="/gallery/plants/" 
+        hx-target="#content-area" 
+        hx-trigger="click"><h2 class="hover:text-6xl">PEOPLE</h2></a>
+        <h2>&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp;&nbsp; </h2>
+        <a href="/gallery/plants" hx-push-url="/gallery/plants" hx-get="/gallery/plants/" 
+        hx-target="#content-area" 
+        hx-trigger="click"><h2 class="hover:text-6xl">CERAMICS</h2></a>
     </div>
 </section>
-<script>
+{% comment %} <script>
     const lightbox = GLightbox({
         selector: '.glightbox' 
     });
-</script>
+</script> {% endcomment %}

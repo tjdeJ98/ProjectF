@@ -34,9 +34,6 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-elementsl.forEach(element => {
-  observer.observe(element); 
-});
 
 const elementsr = document.querySelectorAll('.fade-in-r-element'); // Select all elements with the class
 const observerr = new IntersectionObserver(entries => {
@@ -48,6 +45,40 @@ const observerr = new IntersectionObserver(entries => {
   });
 });
 
-elementsr.forEach(element => {
-  observerr.observe(element); 
+
+
+
+
+const elementsa = document.querySelectorAll('.fade-in'); // Select all elements with the class
+const observera = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('opacity-0', 'invisible'); 
+      entry.target.classList.add('animate-fadeIn');
+    }
+  });
+});
+
+
+document.body.addEventListener('htmx:load', function(evt) {
+  const contentArea = document.getElementById('content-area'); 
+  const elementsr = contentArea.querySelectorAll('.fade-in-r-element')
+  const elementsl = contentArea.querySelectorAll('.fade-in-l-element')
+  const elementsa = contentArea.querySelectorAll('.fade-in')
+
+  console.log("load");
+  setTimeout(() => { // Add a delay
+    elementsa.forEach(element => {
+      observera.observe(element); 
+    });
+
+    elementsr.forEach(element => {
+      console.log("element found");
+      observerr.observe(element); 
+    });
+
+    elementsl.forEach(element => {
+      observer.observe(element); 
+    });
+  }, 100);
 });

@@ -1,4 +1,85 @@
-<section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-32 border-b-[0.1rem]">
+{% load static %}
+<div class="relative overflow-hidden bg-center bg-cover bg-no-repeat">
+    <section class="container mx-auto min-h-full">
+        <div class="flex flex-wrap justify-center space-x-0 xl:space-x-32 ">
+            <div class="p-4 max-w-lg">
+                <div class="flex flex-col items-center justify-center h-full p-0 md:p-8 flex-col font-Volkhov">
+                    <div class="w-96 h-flex flex justify-center">
+                        <img id="" class="fade-in-l-element opacity-0 max-h-96 lg:max-h-lvh md:max-h-svh" src="{% static 'media/homepage/fede1.jpg' %}" alt=""/>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="" class="fade-in-r-element opacity-0 p-4 max-w-lg">
+                <div class="flex flex-col items-center text-center justify-center h-full p-0 md:p-8 font-Volkhov">
+                    <h2 class="font-medium text-md font-Volkhov mb-8">HI, I'M FEDERICA!</h2>
+                    <h1 class="font-thin text-3xl mb-8">Psychology Batcher. Photographer. Clay Artist. Punchneedler and Plant wisperer.</h1>
+                    <h1 style="">My name is Federica Moro, I am a twenty-two year old Italian student and I am a recent graduate of a three-year course in Psychology at the University of Groningen (RUG), the Netherlands.</h1>
+                </div>
+            </div>
+        
+        </div>
+    </section> 
+</div>
+    <section class="relative overflow-hidden bg-center bg-cover bg-no-repeat my-20" style="background-image: url('https://images.squarespace-cdn.com/content/v1/59551049ccf21033ff89a906/1532706156010-R68VECRDMTAHVJWYOLS4/shanleycox-home-diamondbg-01.png?format=2500w')">
+        <div class="flex flex-wrap justify-center space-x-0 xl:h-[50rem] 2xl:h-[35rem] h-[60rem] lg:space-x-16">
+    
+            <div id="" class="fade-in-l-element opacity-0 p-4 max-w-lg">
+                <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8 flex-col font-Volkhov">
+                        
+                    <i class="text-4xl fas fa-graduation-cap text-purple-500"></i>
+                    <h1 class="md:my-8 text-4xl font-thin">Psychology Studies</h1>
+                    <h1 class="leading-relaxed text-base text-black font-Volkhov mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h1>
+                </div>
+            </div>
+            
+            <div id="" class="fade-in-l-element opacity-0 p-4 max-w-lg">
+                <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8font-Volkhov">
+                        
+                    <i class="text-4xl fa-solid fa-leaf text-green-500"></i>
+                    <h1 class="md:my-8 text-4xl font-thin">Nature / Creativity</h1>
+                    <p class="leading-relaxed text-base text-black font-Volkhov mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div id="" class="fade-in-l-element opacity-0 p-4 max-w-lg">
+            <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8 font-Volkhov">
+                        
+                <i class="text-4xl fas fa-camera text-red-500"></i>
+                <h1 class="md:my-8 text-4xl font-thin">Photography</h1>
+                <p class="leading-relaxed text-base text-black font-Volkhov mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+                </p>
+                    <a href="/galleries" hx-push-url="/gallery" hx-get="/galleries/" 
+                    hx-target="#content-area" 
+                    hx-trigger="click" class="mt-8"><p class="font-bold border-b-[0.1rem] border-gray-500">See gallery</p></a>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <section>
+        <div class="relative overflow-hidden bg-center bg-cover bg-no-repeat " style="background-image: url('https://images.squarespace-cdn.com/content/v1/59551049ccf21033ff89a906/1677526264463-V05GCWWL7LWXCJVKQ3Z5/Light+Gray+with+Mist.png?format=2500w')">
+            <section class="container mx-auto min-h-full">
+                <div class="flex flex-wrap justify-center space-x-0 xl:space-x-32 ">
+                    <div id="" class="fade-in-r-element opacity-0 p-4 max-w-4xl h-96">
+                        <div class="flex flex-col text-center inline-block items-center justify-center h-full p-8 flex-col font-Volkhov">
+                            
+                            <h1 class="italic mt-3 text-3xl font-thin">"For my part I know nothing with any certainty, but the sight of the stars makes me dream.</h1>
+                            <span class="font-bold mt-8 leading-relaxed text-base text-black font-Volkhov mt-3">
+                                Vincent Van Gogh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </div>
+    </section>
+    
+{% comment %} <section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-32 border-b-[0.1rem]">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid items-center grid-cols-1 md:grid-cols-2">
 
@@ -12,8 +93,8 @@
                         <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300"></span>
                     <span class="relative"> Have a question? </span>
                     </span>
-                    <br class="block sm:hidden" />Ask me on <a href="#" title=""
-                        class="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 hover:underline">Twitter</a>
+                    <br class="block sm:hidden" />Contact me <a href="#" title=""
+                        class="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 hover:underline">here</a>
                 </p>
             </div>
 
@@ -24,4 +105,4 @@
 
         </div>
     </div>
-</section>
+</section> {% endcomment %}
